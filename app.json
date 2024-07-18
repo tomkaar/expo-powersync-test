@@ -12,13 +12,17 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "buildNumber": "2",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.test.tk.powersync"
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.test.tk.powersync"
     },
     "web": {
       "favicon": "./assets/favicon.png"

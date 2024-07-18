@@ -4,18 +4,37 @@
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild": "expo prebuild",
+    "prebuild:clean": "expo prebuild --clean",
+    "eas:build:production:ios": "eas build --profile production -p ios",
+    "eas:build:production:ios:local": "eas build --profile production -p ios --local",
+    "eas:build:development:ios": "eas build --profile development -p ios",
+    "eas:build:development-simulator:ios:local": "eas build --profile development-simulator -p ios --local"
   },
   "dependencies": {
+    "@azure/core-asynciterator-polyfill": "^1.0.2",
+    "@craftzdog/react-native-buffer": "^6.0.5",
+    "@journeyapps/react-native-quick-sqlite": "^1.1.8",
+    "@powersync/react-native": "^1.8.1",
+    "base-64": "^1.0.0",
     "expo": "~51.0.21",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-native": "0.74.3",
+    "react-native-fetch-api": "^3.0.0",
+    "react-native-polyfill-globals": "^3.1.0",
+    "react-native-url-polyfill": "^2.0.0",
+    "text-encoding": "^0.7.0",
+    "web-streams-polyfill": "3.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/plugin-transform-async-generator-functions": "^7.24.7",
+    "@types/react": "^18.3.3",
+    "typescript": "^5.5.3"
   },
   "private": true
 }
