@@ -15,26 +15,19 @@
     "eas:build:development-simulator:ios:local": "eas build --profile development-simulator -p ios --local"
   },
   "dependencies": {
-    "@azure/core-asynciterator-polyfill": "^1.0.2",
-    "@craftzdog/react-native-buffer": "^6.0.5",
     "@journeyapps/react-native-quick-sqlite": "^1.1.8",
-    "@powersync/react-native": "^1.8.1",
-    "base-64": "^1.0.0",
+    "@powersync/react-native": "0.0.0-dev-20240718080705",
     "expo": "~51.0.21",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
     "react-native": "0.74.3",
-    "react-native-fetch-api": "^3.0.0",
-    "react-native-polyfill-globals": "^3.1.0",
-    "react-native-url-polyfill": "^2.0.0",
-    "text-encoding": "^0.7.0",
-    "web-streams-polyfill": "3.2.1"
+    "@powersync/common": "0.0.0-dev-20240718080705"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/plugin-transform-async-generator-functions": "^7.24.7",
-    "@types/react": "^18.3.3",
-    "typescript": "^5.5.3"
+    "@types/react": "~18.2.79",
+    "typescript": "~5.3.3"
   },
   "private": true
 }

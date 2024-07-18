@@ -1,4 +1,7 @@
-import { PowerSyncContext } from "@powersync/react-native";
+import {
+  PowerSyncContext,
+  SyncStreamConnectionMethod,
+} from "@powersync/react-native";
 import { type ReactNode, useEffect, useState } from "react";
 
 import { Connector } from "./connector";
@@ -13,7 +16,9 @@ export const PowerSyncProvider = ({ children }: { children: ReactNode }) => {
       try {
         await powersync.init();
         console.log("Powersync initialized");
-        powersync.connect(connector);
+        powersync.connect(connector, {
+          connectionMethod: SyncStreamConnectionMethod.WEB_SOCKET,
+        });
         console.log("Connected to powersync");
       } catch (error) {
         console.error(error);
